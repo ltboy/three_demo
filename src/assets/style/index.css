@@ -1,4 +1,5 @@
 body{
-    background: #eee;
-    background-image: url('../img/webpack-logo.svg');
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
 }

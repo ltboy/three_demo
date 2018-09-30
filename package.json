@@ -13,7 +13,9 @@
     "precommit-msg",
     "lint"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "three": "^0.97.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
@@ -21,6 +23,7 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/runtime": "^7.0.0",
     "@types/node": "^10.11.3",
+    "@types/three": "^0.92.23",
     "autoprefixer": "^9.1.5",
     "babel-loader": "^8.0.4",
     "copy-webpack-plugin": "^4.5.2",

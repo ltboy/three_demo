@@ -1,3 +1,5 @@
-## 放一些webpack 相关配置 方便后面使用查找
+# THREE|demo
 
-##  webpack-typescript
+# 执行方法  
+1. npm i
+2. npm run dev
