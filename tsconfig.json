@@ -24,7 +24,7 @@
     ]
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts", "libs/stats.js"
   ],
   "exclude": [
     "node_modules"

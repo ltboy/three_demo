@@ -2,10 +2,11 @@
 
 const webpack = require('webpack')
 const merge = require('webpack-merge')
-const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
 
 const utils = require('./utils')
 const baseConfig = require('./base.conf.js')
+
+console.log(`Your application is running here: ${utils.URL}`)
 
 module.exports = merge(baseConfig, {
     mode: 'development',
@@ -29,14 +30,6 @@ module.exports = merge(baseConfig, {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new FriendlyErrorsWebpackPlugin({
-            compilationSuccessInfo: {
-                messages: [`Your application is running here: ${utils.URL}`],
-            },
-            clearConsole: true,
-            additionalTransformers: [utils.transformer],
-            additionalFormatters: [utils.formatter],
-        })
     ],
     // server
     devServer: {
@@ -50,7 +43,7 @@ module.exports = merge(baseConfig, {
         port: utils.PORT,
         // open: true,
         overlay: { warnings: false, errors: true },
-        quiet: true,
+        // quiet: true,
         watchOptions: {
             poll: true
         }
